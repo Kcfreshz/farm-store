@@ -210,6 +210,7 @@ header {
 .latest-product {
   margin-bottom: 15rem;
   text-align: center;
+  z-index: 10;
 }
 
 .col-3 {
@@ -276,6 +277,7 @@ header {
   height: 70vh;
   background: url("images/background4.jpg") no-repeat center center/cover;
   text-align: center;
+  z-index: 20;
 }
 
 .vegetables .row2 {
@@ -911,7 +913,6 @@ footer .row {
   width: 3rem;
   position: fixed;
   top: 2rem;
-  /* right: 2rem; */
   right: 0.5rem;
   border-radius: 50%;
   z-index: 200;
@@ -926,7 +927,6 @@ footer .row {
   border-radius: 50%;
   position: fixed;
   top: 2rem;
-  /* right: 2.5rem; */
   right: 1rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 100;
@@ -1399,45 +1399,19 @@ footer .row {
 @media only screen and (max-width: 25em) {
   /* 400px / 16px = 25em */
   .navbar li a {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 0.5rem 0.4rem 0.1rem 0;
   }
 
   .navbar li .bx-search,
   .navbar li .bx-cart {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 0.1rem;
   }
 
   .hero-txt {
     padding: 7rem 0 0 1rem;
     /* font-size: 1rem; */
-  }
-
-  .vegetables-txt h2 {
-    font-size: 1.5rem;
-    padding: 2rem 0;
-  }
-}
-
-@media only screen and (max-width: 20em) {
-  /* 320px / 16px = 20em */
-  /* Header */
-  .logo {
-    background-color: #4baf47;
-  }
-  .navbar ul li a {
-    display: none;
-  }
-
-  .bx-search,
-  .bx-cart {
-    color: #fff;
-  }
-
-  .hero-txt {
-    padding: 3.5rem 0 0 2rem;
-    font-size: 1.7rem;
   }
 
   .business-model {
@@ -1466,6 +1440,32 @@ footer .row {
 
   .model-box:not(:last-child) {
     margin: 0;
+  }
+
+  .vegetables-txt h2 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  /* 320px / 16px = 20em */
+  /* Header */
+  .logo {
+    background-color: #4baf47;
+  }
+  .navbar ul li a {
+    display: none;
+  }
+
+  .bx-search,
+  .bx-cart {
+    color: #fff;
+  }
+
+  .hero-txt {
+    padding: 3.5rem 0 0 2rem;
+    font-size: 1.7rem;
   }
 
   /* Vegetable Display */
